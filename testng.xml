@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<groups>
+			<run>
+				<exclude name="skipGroup" />
+				<!-- Add specific groups to include or remove this line if no
+				groups to include -->
+				<!-- <include name="groupName" /> -->
+			</run>
+		</groups>
+		<classes>
+			<class name="SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode" />
+			<class name="SeleniumCodeSDET.SDETCode.DataProvider_FillForm" />
+			<class name="SeleniumCodeSDET.SDETCode.BrokenLink" />
+			<class name="SeleniumCodeSDET.SDETCode.DataBaseConnection" />
+			<class name="SeleniumCodeSDET.SDETCode.ChatGPTCode_1" />
+			<class name="SeleniumCodeSDET.SDETCode.MultipleWindow" />
+			<class name="SeleniumCodeSDET.SDETCode.WebDriverWaitCode" />
+			<class name="SeleniumCodeSDET.SDETCode.HandleAlerts" />
+			<class name="SeleniumCodeSDET.SDETCode.DataProviderTest" />
+		</classes>
+	</test>
+</suite>

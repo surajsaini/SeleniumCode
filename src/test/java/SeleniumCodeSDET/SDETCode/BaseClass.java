@@ -21,7 +21,8 @@ public class BaseClass {
 		if (browser.toLowerCase().equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");
+			 options.addArguments("--headless");
+			options.addArguments("--disable-notifications");
 			driver = new ChromeDriver(options);
 		} else if (browser.toLowerCase().equals("edge")) {
 			WebDriverManager.edgedriver().setup();

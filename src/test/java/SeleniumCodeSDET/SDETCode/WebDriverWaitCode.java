@@ -29,5 +29,12 @@ public class WebDriverWaitCode extends BaseClass {
 			System.out.println("No alert is presetn at the moment");
 		}
 	}
+	
+	@Test
+	public void table() {
+		
+		
+		
+	}
 
 }

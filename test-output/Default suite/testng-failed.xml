@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumCodeSDET.SDETCode.MultipleWindow">
+      <class name="SeleniumCodeSDET.SDETCode.DataProvider_FillForm">
         <methods>
+          <include name="fillform" invocation-numbers="0 1 2"/>
           <include name="browserSetup"/>
-          <include name="handleMultipleWindow"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- SeleniumCodeSDET.SDETCode.MultipleWindow -->
+      </class> <!-- SeleniumCodeSDET.SDETCode.DataProvider_FillForm -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

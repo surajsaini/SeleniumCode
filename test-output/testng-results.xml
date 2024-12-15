@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="19" total="30" passed="8" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-02T17:51:21 PST" name="Default suite" finished-at="2024-12-02T17:51:37 PST" duration-ms="15633">
+  <suite started-at="2024-12-11T01:24:48 PST" name="Suite" finished-at="2024-12-11T01:26:14 PST" duration-ms="86256">
     <groups>
+      <group name="">
+        <method signature="HandleAlerts.promptBox()[pri:0, instance:SeleniumCodeSDET.SDETCode.HandleAlerts@682b2fa]" name="promptBox" class="SeleniumCodeSDET.SDETCode.HandleAlerts"/>
+        <method signature="JavaScriptExecutorCode.confirmAlert()[pri:0, instance:SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode@5542c4ed]" name="confirmAlert" class="SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode"/>
+        <method signature="WebDriverWaitCode.timerSimpleAlert()[pri:0, instance:SeleniumCodeSDET.SDETCode.WebDriverWaitCode@139982de]" name="timerSimpleAlert" class="SeleniumCodeSDET.SDETCode.WebDriverWaitCode"/>
+      </group> <!--  -->
     </groups>
-    <test started-at="2024-12-02T17:51:21 PST" name="Default test" finished-at="2024-12-02T17:51:37 PST" duration-ms="15633">
-      <class name="SeleniumCodeSDET.SDETCode.MultipleWindow">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:SeleniumCodeSDET.SDETCode.MultipleWindow@5fe94a96]" started-at="2024-12-02T17:51:21 PST" name="browserSetup" finished-at="2024-12-02T17:51:24 PST" duration-ms="2147" status="PASS">
+    <test started-at="2024-12-11T01:24:48 PST" name="Test" finished-at="2024-12-11T01:26:14 PST" duration-ms="86256">
+      <class name="SeleniumCodeSDET.SDETCode.WebDriverWaitCode">
+        <test-method signature="table()[pri:0, instance:SeleniumCodeSDET.SDETCode.WebDriverWaitCode@139982de]" started-at="2024-12-11T01:25:40 PST" name="table" finished-at="2024-12-11T01:25:40 PST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserSetup -->
-        <test-method signature="handleMultipleWindow()[pri:0, instance:SeleniumCodeSDET.SDETCode.MultipleWindow@5fe94a96]" started-at="2024-12-02T17:51:24 PST" name="handleMultipleWindow" finished-at="2024-12-02T17:51:37 PST" duration-ms="12973" status="FAIL">
+        </test-method> <!-- table -->
+        <test-method signature="timerSimpleAlert()[pri:0, instance:SeleniumCodeSDET.SDETCode.WebDriverWaitCode@139982de]" started-at="2024-12-11T01:25:40 PST" name="timerSimpleAlert" finished-at="2024-12-11T01:25:48 PST" duration-ms="7858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timerSimpleAlert -->
+      </class> <!-- SeleniumCodeSDET.SDETCode.WebDriverWaitCode -->
+      <class name="SeleniumCodeSDET.SDETCode.MultipleWindow">
+        <test-method signature="handleMultipleWindow()[pri:0, instance:SeleniumCodeSDET.SDETCode.MultipleWindow@385c9627]" started-at="2024-12-11T01:25:11 PST" name="handleMultipleWindow" finished-at="2024-12-11T01:25:40 PST" duration-ms="28917" status="FAIL">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[expected:<5> but was:<6>]]>
@@ -56,11 +67,212 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleMultipleWindow -->
-        <test-method is-config="true" signature="browserQuit()[pri:0, instance:SeleniumCodeSDET.SDETCode.MultipleWindow@5fe94a96]" started-at="2024-12-02T17:51:37 PST" name="browserQuit" finished-at="2024-12-02T17:51:37 PST" duration-ms="455" status="PASS">
+      </class> <!-- SeleniumCodeSDET.SDETCode.MultipleWindow -->
+      <class name="SeleniumCodeSDET.SDETCode.DataProvider_FillForm">
+        <test-method signature="fillform(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumCodeSDET.SDETCode.DataProvider_FillForm@10683d9d]" started-at="2024-12-11T01:24:56 PST" name="fillform" data-provider="userData" finished-at="2024-12-11T01:24:59 PST" duration-ms="3142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[john.doe@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillform -->
+        <test-method signature="fillform(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumCodeSDET.SDETCode.DataProvider_FillForm@10683d9d]" started-at="2024-12-11T01:24:59 PST" name="fillform" data-provider="userData" finished-at="2024-12-11T01:25:02 PST" duration-ms="2692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jane.smith@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillform -->
+        <test-method signature="fillform(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumCodeSDET.SDETCode.DataProvider_FillForm@10683d9d]" started-at="2024-12-11T01:25:02 PST" name="fillform" data-provider="userData" finished-at="2024-12-11T01:25:04 PST" duration-ms="2054" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mike]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Johnson]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike.johnson@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillform -->
+      </class> <!-- SeleniumCodeSDET.SDETCode.DataProvider_FillForm -->
+      <class name="SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode@5542c4ed]" started-at="2024-12-11T01:24:48 PST" name="browserSetup" finished-at="2024-12-11T01:24:53 PST" duration-ms="5345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="confirmAlert()[pri:0, instance:SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode@5542c4ed]" started-at="2024-12-11T01:24:53 PST" name="confirmAlert" finished-at="2024-12-11T01:24:56 PST" duration-ms="3104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmAlert -->
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode@5542c4ed]" started-at="2024-12-11T01:26:13 PST" name="browserQuit" finished-at="2024-12-11T01:26:14 PST" duration-ms="1037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- SeleniumCodeSDET.SDETCode.MultipleWindow -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode -->
+      <class name="SeleniumCodeSDET.SDETCode.HandleAlerts">
+        <test-method signature="promptBox()[pri:0, instance:SeleniumCodeSDET.SDETCode.HandleAlerts@682b2fa]" started-at="2024-12-11T01:25:48 PST" name="promptBox" finished-at="2024-12-11T01:25:50 PST" duration-ms="2025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- promptBox -->
+      </class> <!-- SeleniumCodeSDET.SDETCode.HandleAlerts -->
+      <class name="SeleniumCodeSDET.SDETCode.DataBaseConnection">
+        <test-method signature="Database()[pri:0, instance:SeleniumCodeSDET.SDETCode.DataBaseConnection@5aa9e4eb]" started-at="2024-12-11T01:25:11 PST" name="Database" finished-at="2024-12-11T01:25:11 PST" duration-ms="8" status="FAIL">
+          <exception class="java.sql.SQLException">
+            <message>
+              <![CDATA[No suitable driver found for jdbc:mysql://localhost:3306/hr]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/hr
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:707)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at SeleniumCodeSDET.SDETCode.DataBaseConnection.Database(DataBaseConnection.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Database -->
+      </class> <!-- SeleniumCodeSDET.SDETCode.DataBaseConnection -->
+      <class name="SeleniumCodeSDET.SDETCode.BrokenLink">
+        <test-method signature="findBrokenLink()[pri:0, instance:SeleniumCodeSDET.SDETCode.BrokenLink@3fc2959f]" started-at="2024-12-11T01:25:04 PST" name="findBrokenLink" finished-at="2024-12-11T01:25:11 PST" duration-ms="7199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findBrokenLink -->
+      </class> <!-- SeleniumCodeSDET.SDETCode.BrokenLink -->
+      <class name="SeleniumCodeSDET.SDETCode.DataProviderTest">
+        <test-method signature="dataProviderIRCTC()[pri:0, instance:SeleniumCodeSDET.SDETCode.DataProviderTest@217ed35e]" started-at="2024-12-11T01:25:50 PST" name="dataProviderIRCTC" finished-at="2024-12-11T01:26:13 PST" duration-ms="22721" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=131.0.6778.109)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [55a06e6f17cc17dc22634fa66e45ca00, sendKeysToElement {value=[Ljava.lang.CharSequence;@77bb48d5, id=f.E10CC082767E62FED85E138A48A14F9B.d.243D518633CC69264F0C38BEFF3F8B4B.e.68}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\suraj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62452/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (55a06e6f17cc17dc22634fa66e45ca00)] -> xpath: //p-autocomplete[@id='destination']]
+Session ID: 55a06e6f17cc17dc22634fa66e45ca00]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=131.0.6778.109)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [55a06e6f17cc17dc22634fa66e45ca00, sendKeysToElement {value=[Ljava.lang.CharSequence;@77bb48d5, id=f.E10CC082767E62FED85E138A48A14F9B.d.243D518633CC69264F0C38BEFF3F8B4B.e.68}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\suraj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62452/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (55a06e6f17cc17dc22634fa66e45ca00)] -> xpath: //p-autocomplete[@id='destination']]
+Session ID: 55a06e6f17cc17dc22634fa66e45ca00
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at SeleniumCodeSDET.SDETCode.DataProviderTest.dataProviderIRCTC(DataProviderTest.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderIRCTC -->
+      </class> <!-- SeleniumCodeSDET.SDETCode.DataProviderTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
