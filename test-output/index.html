@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
+                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -112,11 +112,6 @@
                         <a href="#" panel-name="suite-Suite" title="SeleniumCodeSDET.SDETCode.DataProviderTest" class="method navigator-link" hash-for-method="dataProviderIRCTC">dataProviderIRCTC</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SeleniumCodeSDET.SDETCode.MultipleWindow" class="method navigator-link" hash-for-method="handleMultipleWindow">handleMultipleWindow</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
@@ -133,7 +128,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SeleniumCodeSDET.SDETCode.DataProvider_FillForm" class="method navigator-link" hash-for-method="fillform(Mike, Johnson, mike.johnson@example.com)">fillform(Mike, Johnson, mike.johnson@example.com)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="SeleniumCodeSDET.SDETCode.DataProvider_FillForm" class="method navigator-link" hash-for-method="fillform(John, Doe, john.doe@example.com)">fillform(John, Doe, john.doe@example.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -143,12 +138,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SeleniumCodeSDET.SDETCode.DataProvider_FillForm" class="method navigator-link" hash-for-method="fillform(John, Doe, john.doe@example.com)">fillform(John, Doe, john.doe@example.com)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="SeleniumCodeSDET.SDETCode.DataProvider_FillForm" class="method navigator-link" hash-for-method="fillform(Mike, Johnson, mike.johnson@example.com)">fillform(Mike, Johnson, mike.johnson@example.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="SeleniumCodeSDET.SDETCode.BrokenLink" class="method navigator-link" hash-for-method="findBrokenLink">findBrokenLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SeleniumCodeSDET.SDETCode.MultipleWindow" class="method navigator-link" hash-for-method="handleMultipleWindow">handleMultipleWindow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -190,14 +190,14 @@
                   </a> <!-- dataProviderIRCTC -->
                   <span class="method-name">dataProviderIRCTC</span>
                   <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=131.0.6778.109)
+  (Session info: chrome=131.0.6778.140)
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [55a06e6f17cc17dc22634fa66e45ca00, sendKeysToElement {value=[Ljava.lang.CharSequence;@77bb48d5, id=f.E10CC082767E62FED85E138A48A14F9B.d.243D518633CC69264F0C38BEFF3F8B4B.e.68}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\suraj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62452/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (55a06e6f17cc17dc22634fa66e45ca00)] -&gt; xpath: //p-autocomplete[@id=&apos;destination&apos;]]
-Session ID: 55a06e6f17cc17dc22634fa66e45ca00
+Command: [45b69d8aa5a988df94bea086e4487e3e, sendKeysToElement {value=[Ljava.lang.CharSequence;@bc042d5, id=f.EFA6DCEAC2821FEE7DA71018B01BDA89.d.E3D18539926269CCDD19570A7F6554A0.e.179}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\suraj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51295}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51295/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (45b69d8aa5a988df94bea086e4487e3e)] -&gt; xpath: //p-autocomplete[@id=&apos;destination&apos;]]
+Session ID: 45b69d8aa5a988df94bea086e4487e3e
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -210,31 +210,6 @@ Session ID: 55a06e6f17cc17dc22634fa66e45ca00
 	at SeleniumCodeSDET.SDETCode.DataProviderTest.dataProviderIRCTC(DataProviderTest.java:56)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">SeleniumCodeSDET.SDETCode.MultipleWindow</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="handleMultipleWindow">
-                  </a> <!-- handleMultipleWindow -->
-                  <span class="method-name">handleMultipleWindow</span>
-                  <div class="stack-trace">junit.framework.AssertionFailedError: expected:&lt;5&gt; but was:&lt;6&gt;
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:282)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:201)
-	at junit.framework.Assert.assertEquals(Assert.java:207)
-	at SeleniumCodeSDET.SDETCode.MultipleWindow.handleMultipleWindow(MultipleWindow.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -287,21 +262,6 @@ Session ID: 55a06e6f17cc17dc22634fa66e45ca00
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">SeleniumCodeSDET.SDETCode.HandleAlerts</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="promptBox">
-                  </a> <!-- promptBox -->
-                  <span class="method-name">promptBox</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -317,15 +277,45 @@ Session ID: 55a06e6f17cc17dc22634fa66e45ca00
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">SeleniumCodeSDET.SDETCode.HandleAlerts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="promptBox">
+                  </a> <!-- promptBox -->
+                  <span class="method-name">promptBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SeleniumCodeSDET.SDETCode.MultipleWindow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="handleMultipleWindow">
+                  </a> <!-- handleMultipleWindow -->
+                  <span class="method-name">handleMultipleWindow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">SeleniumCodeSDET.SDETCode.DataProvider_FillForm</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="fillform(Mike, Johnson, mike.johnson@example.com)">
-                  </a> <!-- fillform(Mike, Johnson, mike.johnson@example.com) -->
+                  <a name="fillform(John, Doe, john.doe@example.com)">
+                  </a> <!-- fillform(John, Doe, john.doe@example.com) -->
                   <span class="method-name">fillform</span>
-                  <span class="parameters">(Mike, Johnson, mike.johnson@example.com)</span>
+                  <span class="parameters">(John, Doe, john.doe@example.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -338,10 +328,10 @@ Session ID: 55a06e6f17cc17dc22634fa66e45ca00
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="fillform(John, Doe, john.doe@example.com)">
-                  </a> <!-- fillform(John, Doe, john.doe@example.com) -->
+                  <a name="fillform(Mike, Johnson, mike.johnson@example.com)">
+                  </a> <!-- fillform(Mike, Johnson, mike.johnson@example.com) -->
                   <span class="method-name">fillform</span>
-                  <span class="parameters">(John, Doe, john.doe@example.com)</span>
+                  <span class="parameters">(Mike, Johnson, mike.johnson@example.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -446,47 +436,47 @@ data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'handleMultipleWindow')
 data.setCell(0, 2, 'SeleniumCodeSDET.SDETCode.MultipleWindow')
-data.setCell(0, 3, 28917);
+data.setCell(0, 3, 25416);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'dataProviderIRCTC')
 data.setCell(1, 2, 'SeleniumCodeSDET.SDETCode.DataProviderTest')
-data.setCell(1, 3, 22721);
+data.setCell(1, 3, 24335);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'timerSimpleAlert')
-data.setCell(2, 2, 'SeleniumCodeSDET.SDETCode.WebDriverWaitCode')
-data.setCell(2, 3, 7858);
+data.setCell(2, 1, 'findBrokenLink')
+data.setCell(2, 2, 'SeleniumCodeSDET.SDETCode.BrokenLink')
+data.setCell(2, 3, 10606);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'findBrokenLink')
-data.setCell(3, 2, 'SeleniumCodeSDET.SDETCode.BrokenLink')
-data.setCell(3, 3, 7199);
+data.setCell(3, 1, 'timerSimpleAlert')
+data.setCell(3, 2, 'SeleniumCodeSDET.SDETCode.WebDriverWaitCode')
+data.setCell(3, 3, 6412);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'fillform')
 data.setCell(4, 2, 'SeleniumCodeSDET.SDETCode.DataProvider_FillForm')
-data.setCell(4, 3, 3142);
+data.setCell(4, 3, 3795);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'confirmAlert')
 data.setCell(5, 2, 'SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode')
-data.setCell(5, 3, 3104);
+data.setCell(5, 3, 3012);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'fillform')
 data.setCell(6, 2, 'SeleniumCodeSDET.SDETCode.DataProvider_FillForm')
-data.setCell(6, 3, 2692);
+data.setCell(6, 3, 2591);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'fillform')
 data.setCell(7, 2, 'SeleniumCodeSDET.SDETCode.DataProvider_FillForm')
-data.setCell(7, 3, 2054);
+data.setCell(7, 3, 2314);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'promptBox')
 data.setCell(8, 2, 'SeleniumCodeSDET.SDETCode.HandleAlerts')
-data.setCell(8, 3, 2025);
+data.setCell(8, 3, 821);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'Database')
 data.setCell(9, 2, 'SeleniumCodeSDET.SDETCode.DataBaseConnection')
-data.setCell(9, 3, 8);
+data.setCell(9, 3, 11);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'table')
 data.setCell(10, 2, 'SeleniumCodeSDET.SDETCode.WebDriverWaitCode')
-data.setCell(10, 3, 3);
+data.setCell(10, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -597,29 +587,29 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">confirmAlert</span>
-                <span class="method-start">5383 ms</span>
+                <span class="method-start">4050 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumCodeSDET.SDETCode.DataProvider_FillForm</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">fillform(John, Doe, john.doe@example.com)</span>
-                <span class="method-start">8500 ms</span>
+                <span class="method-start">7079 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fillform(Jane, Smith, jane.smith@example.com)</span>
-                <span class="method-start">11646 ms</span>
+                <span class="method-start">10874 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fillform(Mike, Johnson, mike.johnson@example.com)</span>
-                <span class="method-start">14344 ms</span>
+                <span class="method-start">13199 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumCodeSDET.SDETCode.BrokenLink</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">findBrokenLink</span>
-                <span class="method-start">16401 ms</span>
+                <span class="method-start">15806 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -628,34 +618,32 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Database</span>
-                <span class="method-start">23605 ms</span>
+                <span class="method-start">26414 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumCodeSDET.SDETCode.MultipleWindow</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">handleMultipleWindow</span>
-                <span class="method-start">23616 ms</span>
+                <span class="method-start">26430 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumCodeSDET.SDETCode.WebDriverWaitCode</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">table</span>
-                <span class="method-start">52576 ms</span>
+                <span class="method-start">51846 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">timerSimpleAlert</span>
-                <span class="method-start">52582 ms</span>
+                <span class="method-start">51850 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumCodeSDET.SDETCode.HandleAlerts</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">promptBox</span>
-                <span class="method-start">60447 ms</span>
+                <span class="method-start">58264 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -664,14 +652,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">dataProviderIRCTC</span>
-                <span class="method-start">62478 ms</span>
+                <span class="method-start">59085 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">browserQuit</span>
-                <span class="method-start">85207 ms</span>
+                <span class="method-start">83428 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

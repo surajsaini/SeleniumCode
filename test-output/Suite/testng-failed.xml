@@ -15,13 +15,6 @@
           <include name="browserQuit"/>
         </methods>
       </class> <!-- SeleniumCodeSDET.SDETCode.DataProviderTest -->
-      <class name="SeleniumCodeSDET.SDETCode.MultipleWindow">
-        <methods>
-          <include name="browserSetup"/>
-          <include name="handleMultipleWindow"/>
-          <include name="browserQuit"/>
-        </methods>
-      </class> <!-- SeleniumCodeSDET.SDETCode.MultipleWindow -->
       <class name="SeleniumCodeSDET.SDETCode.DataBaseConnection">
         <methods>
           <include name="Database"/>

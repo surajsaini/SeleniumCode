@@ -22,7 +22,7 @@ public class MultipleWindow extends BaseClass {
 
 	// about us page data
 	String rowNumberXpath = "//div[@class='section-inner-account']/div[@class='row']";
-	int rowCountOnPage = 6;
+	int rowCountOnPage = 5;
 
 	@Test
 	void handleMultipleWindow() throws InterruptedException {

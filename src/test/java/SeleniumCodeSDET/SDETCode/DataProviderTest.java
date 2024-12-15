@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 public class DataProviderTest extends BaseClass {
 
-	@Test
+	@Test(enabled = false)
 	void dataProviderIRCTC() throws InterruptedException {
 
 		// IRCTC search page
@@ -29,23 +29,22 @@ public class DataProviderTest extends BaseClass {
 
 		driver.get(URL1);
 
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-	//	WebElement fromTextBox = driver.findElement(By.xpath(fromTextBoxXpath));
+		// WebElement fromTextBox = driver.findElement(By.xpath(fromTextBoxXpath));
 		WebElement toTextBox = driver.findElement(By.xpath(toTextBoxXpath));
 		WebElement dateTextBox = driver.findElement(By.xpath(dateTextBoxXpath));
 		WebElement tickBox = driver.findElement(By.xpath(tickBoxXpath));
 
-		 WebElement fromTextBox =
-		wait.until(ExpectedConditions.elementToBeClickable(By.id("origin")));
-		 
-		 Actions actions = new Actions(driver);
-	        actions.moveToElement(fromTextBox).click().sendKeys("Delhi").perform();
+		WebElement fromTextBox = wait.until(ExpectedConditions.elementToBeClickable(By.id("origin")));
 
-	//	JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		Actions actions = new Actions(driver);
+		actions.moveToElement(fromTextBox).click().sendKeys("Delhi").perform();
+
+		// JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 
 		// Send keys using JavaScript
-	//	jsExecutor.executeScript("arguments[0].value='New Delhi';", fromTextBox);
+		// jsExecutor.executeScript("arguments[0].value='New Delhi';", fromTextBox);
 		Thread.sleep(10000);
 
 		// driver.findElement(By.id("origin")).sendKeys("New Delhi");

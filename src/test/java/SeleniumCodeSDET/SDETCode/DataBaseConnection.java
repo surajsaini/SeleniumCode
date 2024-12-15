@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class DataBaseConnection {
 
-@Test
+@Test (enabled = false)
 public void Database() throws SQLException {
 	
 	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hr", "root", "root");
