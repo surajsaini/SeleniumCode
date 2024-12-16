@@ -22,7 +22,7 @@ public class DataProvider_FillForm extends BaseClass {
 				              };
 	}
 
-	@Test(dataProvider = "userData", enabled=false)
+	@Test(dataProvider = "userData", enabled=true)
 	void fillform(String firstName, String lastName, String email) throws InterruptedException{
 
 		// form main page

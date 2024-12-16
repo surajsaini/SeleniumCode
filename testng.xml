@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	<listeners>
+		<listener class-name="SeleniumCodeSDET.SDETCode.IRetryAnalyzerListener.java" />
+	</listeners>
 	<test name="Test">
 		<groups>
 			<run>
 				<exclude name="skipGroup" />
-				<!-- Add specific groups to include or remove this line if no
-				groups to include -->
-				<!-- <include name="groupName" /> -->
+				<include name="" />
 			</run>
 		</groups>
 		<classes>

@@ -16,7 +16,7 @@ public class WebDriverWaitCode extends BaseClass {
 	String timerAlertButton = "//button[@id='timerAlertButton']";
 	String URL2 = "https://demoqa.com/alerts";
 
-	@Test(enabled = true, groups = { "" }) //1
+	@Test(enabled = true, groups = { "Regression" }) //1
 	public void timerSimpleAlert() {
 		driver.get(URL2);
 		WebElement timerAlertClickButton = driver.findElement(By.xpath(timerAlertButton));
