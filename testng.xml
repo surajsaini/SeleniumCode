@@ -5,7 +5,6 @@
 		<groups>
 			<run>
 				<exclude name="skipGroup" />
-				<include name="abc" />
 			</run>
 		</groups>
 		<classes>
