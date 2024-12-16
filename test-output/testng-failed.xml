@@ -4,22 +4,21 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+        <include name=""/>
         <exclude name="skipGroup"/>
       </run>
     </groups>
     <classes>
-      <class name="SeleniumCodeSDET.SDETCode.DataProviderTest">
+      <class name="SeleniumCodeSDET.SDETCode.HandleAlerts">
         <methods>
-          <include name="browserSetup"/>
-          <include name="dataProviderIRCTC"/>
-          <include name="browserQuit"/>
+          <include name="promptBox"/>
         </methods>
-      </class> <!-- SeleniumCodeSDET.SDETCode.DataProviderTest -->
-      <class name="SeleniumCodeSDET.SDETCode.DataBaseConnection">
+      </class> <!-- SeleniumCodeSDET.SDETCode.HandleAlerts -->
+      <class name="SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode">
         <methods>
-          <include name="Database"/>
+          <include name="confirmAlert"/>
         </methods>
-      </class> <!-- SeleniumCodeSDET.SDETCode.DataBaseConnection -->
+      </class> <!-- SeleniumCodeSDET.SDETCode.JavaScriptExecutorCode -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

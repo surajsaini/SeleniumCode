@@ -15,15 +15,12 @@ public class DataProvider_FillForm extends BaseClass {
 
 	@DataProvider(name = "userData")
 	public Object[][] provideData() {
-		return new Object[][] { 
-		     	{ "John", "Doe", "john.doe@example.com" },
-				{ "Jane", "Smith", "jane.smith@example.com" }, 
-				{ "Mike", "Johnson", "mike.johnson@example.com" } 
-				              };
+		return new Object[][] { { "John", "Doe", "john.doe@example.com" },
+				{ "Jane", "Smith", "jane.smith@example.com" }, { "Mike", "Johnson", "mike.johnson@example.com" } };
 	}
 
-	@Test(dataProvider = "userData", enabled=true)
-	void fillform(String firstName, String lastName, String email) throws InterruptedException{
+	@Test(dataProvider = "userData", enabled = true, retryAnalyzer = IRetryAnalyzerListener.class)
+	void fillform(String firstName, String lastName, String email) throws InterruptedException {
 
 		// form main page
 		String firstNameXpath = "//input[@type='text' and @name='input_1.3']";
@@ -38,9 +35,8 @@ public class DataProvider_FillForm extends BaseClass {
 		driver.findElement(By.xpath(emailXpath)).sendKeys(email);
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		
+
 		js.executeScript("window.scrollBy(0, 1000);");
-		
 
 		driver.findElement(By.xpath(submitButtonXpath)).click();
 
